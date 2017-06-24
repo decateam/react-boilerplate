@@ -23,6 +23,10 @@ class App extends Component {
     return (
       <div className="App">
         <AppNavigation />
+        <div className="row">
+          <div className="col-md-4">TOC</div>
+          <div className="col-md-8">HTML</div>
+        </div>
       </div>
     );
   }
