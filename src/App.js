@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import CodeFest             from "./components/CodeFest/CodeFest"
+// import CodeFest             from "./components/CodeFest/CodeFest";
+import AppNavigation        from "./components/Decateam/AppNavigation";
 
+// import * as ReactBootstrap  from 'react-bootstrap';
+
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
@@ -18,7 +22,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CodeFest />
+        <AppNavigation />
+        <div className="row">
+          <div className="col-md-4">TOC</div>
+          <div className="col-md-8">HTML</div>
+        </div>
       </div>
     );
   }
