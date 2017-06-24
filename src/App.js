@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppNavigation        from "./components/Decateam/AppNavigation";
-import HtmlParser           from "./components/Decateam/HtmlParser/HtmlParser";
+import HtmlParser           from "./components/Decateam/HtmlParser";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
