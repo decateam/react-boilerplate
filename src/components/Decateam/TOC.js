@@ -6,10 +6,10 @@ class TOC extends React.Component {
 
     constructor(){
         super();
-        this.renderItems = this.renderItems.bind(this);
+        this.processItems = this.processItems.bind(this);
     }
 
-    renderItems(items, level) {
+    processItems(items, existing) {
         let response = [];
         for(const i in items)
         {
@@ -18,24 +18,41 @@ class TOC extends React.Component {
             {
                 if(/^(h\d{1}|p|[dou]l)$/i.test(element.tagName))
                 {
-                    response.push({type: element.tagName, value: element.innerHtml, level: level, key: ("tocitem-" + level + "-" + i) });
+                    response.push(this.processItem(element, existing.concat(response)));
                 }
                 if(element.children !== undefined || element.children.length > 0)
                 {
-                    response = response.concat(this.renderItems(element.children, (level + 1)));
+                    response = response.concat(this.processItems(element.children, existing.concat(response)));
                 }
             }
         }
         return response;
     }
 
+    processItem(item, existing){
+        let response = {
+            type: item.tagName,
+            value: item.innerHtml
+        };
+        if(/^h\d{1}$/i.test(item.tagName)){
+            response.level = item.tagName.slice(-1);
+        }
+        else if(/^h\d{1}$/i.test(existing.slice(-1).pop().type)){
+            response.level = parseInt(existing.slice(-1).pop().level, 10) + 1;
+        }
+        else{
+            response.level = existing.slice(-1).pop().level;
+        }
+        return response;
+    }
+
     render() {
-        const tocItems = this.renderItems(this.props.jsonData, 1);
+        const tocItems = this.processItems(this.props.jsonData, []);
 
         return (
-            <div className="toc">
+            <div id="toc">
                 <ul>
-                    { tocItems.map((item) => <TOCItem itemData={ item } /> )}
+                    { tocItems.map((item, index) => <TOCItem itemData={ item } key={"tocitem-" + (index+1) } /> )}
                 </ul>
             </div>
         );
