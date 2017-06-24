@@ -4,6 +4,7 @@ import AppNavigation        from "./components/Decateam/AppNavigation";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
