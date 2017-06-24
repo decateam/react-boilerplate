@@ -31,9 +31,15 @@ class TOC extends React.Component {
 
     processItem(item, existing){
         let response = {
-            type: item.tagName,
-            value: item.innerHtml
+            type: item.tagName
         };
+
+        let firstChild
+        do {
+            firstChild = item.children[0];
+            response.value = firstChild.content;
+        } while (firstChild.type !== "Text");
+
         if(/^h\d{1}$/i.test(item.tagName)){
             response.level = item.tagName.slice(-1);
         }
