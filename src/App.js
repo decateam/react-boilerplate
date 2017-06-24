@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AppNavigation        from "./components/Decateam/AppNavigation";
 import HtmlParser           from "./components/Decateam/HtmlParser";
-import TableOfContents      from "./components/Decateam/TableOfContents";
+import TOC      from "./components/Decateam/TOC";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
@@ -27,7 +27,7 @@ class App extends Component {
         <AppNavigation />
         <div className="row">
           <div className="col-md-4">
-            <TableOfContents jsonData={this.state.jsonData}/>
+            <TOC jsonData={this.state.jsonData}/>
           </div>
           <div className="col-md-8">
             <HtmlParser />

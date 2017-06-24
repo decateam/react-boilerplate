@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TableOfContents extends React.Component {
+class TOC extends React.Component {
 
     constructor(){
         super();
@@ -15,4 +15,4 @@ class TableOfContents extends React.Component {
     }
 }
 
-export default TableOfContents
+export default TOC
