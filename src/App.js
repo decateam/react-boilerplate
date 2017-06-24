@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import CodeFest             from "./components/CodeFest/CodeFest";
 import AppNavigation        from "./components/Decateam/AppNavigation";
+import HtmlParser           from "./components/Decateam/HtmlParser/HtmlParser";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
@@ -15,7 +15,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
       this.setState({ loading: false })
   }
 
@@ -25,7 +25,9 @@ class App extends Component {
         <AppNavigation />
         <div className="row">
           <div className="col-md-4">TOC</div>
-          <div className="col-md-8">HTML</div>
+          <div className="col-md-8">
+            <HtmlParser />
+          </div>
         </div>
       </div>
     );
