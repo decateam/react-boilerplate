@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import CodeFest             from "./components/CodeFest/CodeFest"
+// import CodeFest             from "./components/CodeFest/CodeFest";
+import AppNavigation        from "./components/Decateam/AppNavigation";
+
+// import * as ReactBootstrap  from 'react-bootstrap';
 
 import './App.css';
 
@@ -18,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CodeFest />
+        <AppNavigation />
       </div>
     );
   }
