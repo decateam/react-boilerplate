@@ -4,9 +4,19 @@ import TOCItem from "./TOCItem";
 
 class TOC extends React.Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+        
+        this.state = {
+            jsonData: this.props.jsonData
+        };
+        
         this.processItems = this.processItems.bind(this);
+    }
+    
+    componentWillReceiveProps(nextProps) {
+        console.log(nextProps);
+        this.setState({jsonData: nextProps});
     }
 
     /**
@@ -68,7 +78,7 @@ class TOC extends React.Component {
     }
 
     render() {
-        const tocItems = this.processItems(this.props.jsonData, []);
+        const tocItems = this.processItems(this.state.jsonData, []);
 
         return (
             <div className="toc col-md-12">
