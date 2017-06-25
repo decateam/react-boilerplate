@@ -2,7 +2,7 @@ import React from 'react';
 
 import TOC from "./TOC";
   
-var ReaderVoice = require('./ReaderVoice');
+import ReaderVoice from './ReaderVoice';
 
 var himalaya = require('himalaya');
 var toHTML = require('himalaya/translate').toHTML;
@@ -29,13 +29,13 @@ class HtmlParser extends React.Component {
         console.log(refName, e);
         let htmlParsed = himalaya.parse(e.target.value);
         
-        //let htmlProcessed = ReaderVoice.readText(htmlParsed);
+        //let htmlProcess = ReaderVoice.readText(htmlParsed);
         
         let htmlifyJson = toHTML(htmlParsed);
 
         this.setState({
             jsonifyHtmlDocument: htmlParsed,
-            //htmlProcessed: htmlProcessed,
+            //htmlProcessed: htmlProcess,
             htmlifyJsonNodes: htmlifyJson
         });
     }
@@ -47,6 +47,7 @@ class HtmlParser extends React.Component {
             <div className="col-md-4">
                 <TOC jsonData={this.state.jsonifyHtmlDocument}/>
             </div>
+            <ReaderVoice jsonData={this.state.jsonifyHtmlDocument} />
             <div className="col-md-8">
                 <div className="input">
                     <textarea id="source" onKeyUp={this.handleTextareaKeyUp} ref="htmlInput" placeholder="HTML a charger"></textarea>

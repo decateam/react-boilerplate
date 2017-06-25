@@ -2,13 +2,13 @@ import React from 'react';
 
 
 class ReaderVoice extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         
         this.state = {
             
         };
-        this.readText = this.readText.bind(this);
+        //this.readText = this.readText.bind(this);
     }
     
     readText( json ) {
@@ -39,7 +39,11 @@ class ReaderVoice extends React.Component {
     }
     
     render() {
-        return '';
+        return <div>
+            <button>play</button>
+            <button>pause</button>
+            <button>stop</button>
+        </div>;
     }
 };
 
