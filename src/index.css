@@ -6,38 +6,38 @@ body {
     font-size: 14px;
 }
 
-body.accessible {
+#appbody.accessible {
     font-size: 28px;
 }
 
-body.accessible span {
+#appbody.accessible span {
     padding: 5px 10px;
 }
 
-body.accessible.white-on-black span {
+#appbody.accessible.white-on-black span {
     color: white;
     background-color: black;
 }
 
-body.accessible.yellow-on-black span {
+#appbody.accessible.yellow-on-black span {
     color: yellow;
     background-color: black;
 }
 
-body.accessible.white-on-blue span {
+#appbody.accessible.white-on-blue span {
     color: white;
     background-color: #1f4e78;
 }
 
-body div.scrollable {
+#appbody div.scrollable {
     width: 100%;
 }
 
-body.accessible div.scrollable-wrapper {
+#appbody.accessible div.scrollable-wrapper {
     overflow-x: scroll;
 }
 
-body.accessible div.scrollable {
+#appbody.accessible div.scrollable {
     width: 300%;
 
 }
