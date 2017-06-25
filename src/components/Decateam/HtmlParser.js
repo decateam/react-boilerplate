@@ -22,7 +22,10 @@ class HtmlParser extends React.Component {
     // Load HTML from textarea
     keyUpHandler(refName, e) {
 
+        // Parse HTML into JSON
         let htmlParsed = himalaya.parse(e.target.value);
+
+        // Transform back JSON to HTML for rendering preview
         let htmlifyJson = toHTML(htmlParsed);
 
         this.setState({
