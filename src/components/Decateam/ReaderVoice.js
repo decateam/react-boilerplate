@@ -40,9 +40,6 @@ class ReaderVoice extends React.Component {
     
     render() {
         return <div>
-            <button>play</button>
-            <button>pause</button>
-            <button>stop</button>
         </div>;
     }
 };

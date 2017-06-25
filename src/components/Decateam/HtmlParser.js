@@ -11,32 +11,35 @@ class HtmlParser extends React.Component {
     // Override constructor
     constructor(props) {
         super(props);
-
+        console.log(props);
+        this.jsonData = props.jsonData;
         // Binding events
         this.handleTextareaKeyUp = this.keyUpHandler.bind(this, 'htmlInput');
         this.updateAppCls = this.updateAppCls.bind(this);
 
         // Define initial state
         this.state = {
-            jsonifyHtmlDocument: {},
-            htmlProcessed: {},
-            htmlifyJsonNodes: '',
+            jsonifyHtmlDocument: this.jsonData,
+            htmlifyJsonNodes: toHTML(this.jsonData),
             appCls: ""
         };
+        
     }
 
     // Load HTML from textarea
     keyUpHandler(refName, e) {
-        console.log(refName, e);
-        let htmlParsed = himalaya.parse(e.target.value);
-
-        //let htmlProcess = ReaderVoice.readText(htmlParsed);
-
-        let htmlifyJson = toHTML(htmlParsed);
+        let jsonData;
+        if(e.target.value !== "") {
+           jsonData = {jsonData :{ children: himalaya.parse(e.target.value) }}
+           console.log(jsonData);
+        } else {
+            jsonData = this.jsonData;
+        }
+        
+        let htmlifyJson = toHTML(jsonData);
 
         this.setState({
-            jsonifyHtmlDocument: htmlParsed,
-            //htmlProcessed: htmlProcess,
+            jsonifyHtmlDocument: jsonData,
             htmlifyJsonNodes: htmlifyJson
         });
     }
