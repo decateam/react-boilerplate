@@ -14,11 +14,11 @@ class App extends Component {
     this.state = {
       loading: true,
       jsonData: require('./../data/document.json')
-    }
+    };
   }
 
   componentDidMount() {
-      this.setState({ loading: false })
+      this.setState({ loading: false });
   }
 
   render() {
@@ -30,7 +30,7 @@ class App extends Component {
             <TOC jsonData={this.state.jsonData}/>
           </div>
           <div className="col-md-8">
-            <HtmlParser />
+            <HtmlParser jsonData={this.state.jsonData} />
           </div>
         </div>
       </div>

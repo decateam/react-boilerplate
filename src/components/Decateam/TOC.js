@@ -34,7 +34,7 @@ class TOC extends React.Component {
             type: item.tagName
         };
 
-        let firstChild
+        let firstChild;
         do {
             firstChild = item.children[0];
             response.value = firstChild.content;

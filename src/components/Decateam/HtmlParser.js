@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HtmlReader from './HtmlReader'
 
 class HtmlParser extends React.Component {
 
@@ -15,8 +15,8 @@ class HtmlParser extends React.Component {
     }
 
     render() {
-      return (
-        <div>Hello</div>
+        return (            
+                <div><HtmlReader jsonData={ this.props.jsonData }/></div>
         )
     }
 }
