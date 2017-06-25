@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AppNavigation        from "./components/Decateam/AppNavigation";
 import HtmlParser           from "./components/Decateam/HtmlParser";
-import TOC                  from "./components/Decateam/TOC";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
@@ -14,25 +13,18 @@ class App extends Component {
     this.state = {
       loading: true,
       jsonData: require('./../data/document.json')
-    }
+    };
   }
 
   componentDidMount() {
-      this.setState({ loading: false })
+      this.setState({ loading: false });
   }
 
   render() {
     return (
       <div className="App">
         <AppNavigation />
-        <div className="row">
-          <div className="col-md-4">
-            <TOC jsonData={this.state.jsonData}/>
-          </div>
-          <div className="col-md-8">
-            <HtmlParser />
-          </div>
-        </div>
+        <HtmlParser jsonData={this.state.jsonData[2].children[3]} />
       </div>
     );
   }
