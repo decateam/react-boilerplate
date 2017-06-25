@@ -19,7 +19,6 @@
  - Bootstrap
  - Utiliser un layout 1/3 (TOC) 2/3 (contenu)
 
- 
 # Questions
 
 - Compatibilité navigateur ? (MeSpeak est compatible Webkit uniquement) => Message d'incompatibilité sur les navigateurs non supportés
@@ -32,3 +31,8 @@
 3. Synthèse vocale
 4. Navigation clavier (+ manette)
 5. Gestion de profil
+
+# TODO
+- [x] Charger le HTML à partir d'une source
+- [x] Transformer le HTML en JSON pour le rendre exploitable plus simplement en JS
+- [ ] Rendre chaque noeud du HTML JSONifié et implémenter une navigation avec le clavier + mettre en surbrillance le noeud actuel

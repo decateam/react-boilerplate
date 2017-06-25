@@ -1,14 +1,17 @@
 import React from 'react';
-import HtmlReader from './HtmlReader'
+
+import TOC from "./TOC";
+  
+var ReaderVoice = require('./ReaderVoice');
 
 var himalaya = require('himalaya');
-var toHTML = require('himalaya/translate').toHTML
+var toHTML = require('himalaya/translate').toHTML;
 
 class HtmlParser extends React.Component {
 
     // Override constructor
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         // Binding events
         this.handleTextareaKeyUp = this.keyUpHandler.bind(this, 'htmlInput');
@@ -16,18 +19,23 @@ class HtmlParser extends React.Component {
         // Define initial state
         this.state = {
             jsonifyHtmlDocument: {},
+            htmlProcessed: {},
             htmlifyJsonNodes: ''
         };
     }
 
     // Load HTML from textarea
     keyUpHandler(refName, e) {
-
+        console.log(refName, e);
         let htmlParsed = himalaya.parse(e.target.value);
+        
+        //let htmlProcessed = ReaderVoice.readText(htmlParsed);
+        
         let htmlifyJson = toHTML(htmlParsed);
 
         this.setState({
             jsonifyHtmlDocument: htmlParsed,
+            //htmlProcessed: htmlProcessed,
             htmlifyJsonNodes: htmlifyJson
         });
     }
@@ -35,15 +43,20 @@ class HtmlParser extends React.Component {
     // Render component
     render() {
       return (
-          <div>
-            <div className="input">
-                <textarea id="source" onKeyUp={this.handleTextareaKeyUp} ref="htmlInput" placeholder="HTML a charger"></textarea>
+        <div className="row">
+            <div className="col-md-4">
+                <TOC jsonData={this.state.jsonifyHtmlDocument}/>
             </div>
-            <div className="output">
-                <div className="content" dangerouslySetInnerHTML={{__html: this.state.htmlifyJsonNodes}}></div>
+            <div className="col-md-8">
+                <div className="input">
+                    <textarea id="source" onKeyUp={this.handleTextareaKeyUp} ref="htmlInput" placeholder="HTML a charger"></textarea>
+                </div>
+                <div className="output">
+                    <div className="content" dangerouslySetInnerHTML={{__html: this.state.htmlifyJsonNodes}}></div>
+                </div>
             </div>
-          </div>
-        )
+        </div> 
+        );
     }
 }
 
