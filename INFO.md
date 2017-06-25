@@ -33,6 +33,6 @@
 5. Gestion de profil
 
 # TODO
-[x] Charger le HTML à partir d'une source
-[x] Transformer le HTML en JSON pour le rendre exploitable plus simplement en JS
-[ ] Rendre chaque noeud du HTML JSONifié et implémenter une navigation avec le clavier + mettre en surbrillance le noeud actuel
+- [x] Charger le HTML à partir d'une source
+- [x] Transformer le HTML en JSON pour le rendre exploitable plus simplement en JS
+- [ ] Rendre chaque noeud du HTML JSONifié et implémenter une navigation avec le clavier + mettre en surbrillance le noeud actuel
