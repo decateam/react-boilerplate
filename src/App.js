@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div id="App">
         <AppNavigation />
         <HtmlParser jsonData={this.state.jsonData[2].children[3]} />
       </div>
