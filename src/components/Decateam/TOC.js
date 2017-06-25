@@ -57,9 +57,7 @@ class TOC extends React.Component {
 
         return (
             <div id="toc">
-                <ul>
-                    { tocItems.map((item, index) => <TOCItem itemData={ item } key={"tocitem-" + (index+1) } /> )}
-                </ul>
+                { tocItems.map((item, index) => <TOCItem itemData={ item } key={"tocitem-" + (index+1) } /> )}
             </div>
         );
     }
