@@ -17,9 +17,15 @@ body {
     cursor: pointer;
 }
 
+#toc .toc-item.active {
+    background: #CCCCCC;
+    -moz-transform:scale(1.10) translate(15px);
+    -webkit-transform:scale(1.10) translate(15px);
+    -o-transform:scale(1.10) translate(15px);
+}
+
 #toc .toc-item:hover {
     background: #AAAAAA;
-    font-size: 120%;
     -moz-transform:scale(1.25) translate(30px);
     -webkit-transform:scale(1.25) translate(30px);
     -o-transform:scale(1.25) translate(30px);
