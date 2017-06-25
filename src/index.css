@@ -8,11 +8,21 @@ body {
 #toc {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    padding-right: 15px;
 }
 
 #toc .toc-item {
-    padding-left: 5px;
     font-size: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#toc .toc-item:hover {
+    background: #AAAAAA;
+    font-size: 120%;
+    -moz-transform:scale(1.25) translate(30px);
+    -webkit-transform:scale(1.25) translate(30px);
+    -o-transform:scale(1.25) translate(30px);
 }
 
 #toc .toc-item.toc-level-1 { font-size: 175%; line-height: 40px;}
@@ -22,6 +32,7 @@ body {
 #toc .toc-item.toc-level-5 { font-size: 90% ; line-height: 25px;}
 
 #toc .toc-item span {
+    text-indent: 5px;
     display:block;
     width: 100%;
     white-space: nowrap;
