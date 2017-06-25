@@ -2597,6 +2597,12 @@ he@1.1.x:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+himalaya@^0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/himalaya/-/himalaya-0.2.10.tgz#6502438e1dda86359649873ee262ad2160645ba4"
+  dependencies:
+    paul "0.0.3"
+
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
@@ -3981,6 +3987,10 @@ path-type@^1.0.0:
     graceful-fs "^4.1.2"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
+
+paul@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/paul/-/paul-0.0.3.tgz#7fbef33df6936c050cb7e9c00c22cbd110b7bb4f"
 
 pbkdf2-compat@2.0.1:
   version "2.0.1"

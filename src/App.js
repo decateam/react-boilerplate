@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppNavigation        from "./components/Decateam/AppNavigation";
-import HtmlParser           from "./components/Decateam/HtmlParser/HtmlParser";
+import HtmlParser           from "./components/Decateam/HtmlParser";
+import TOC                  from "./components/Decateam/TOC";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
@@ -11,7 +12,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      loading: true
+      loading: true,
+      jsonData: require('./../data/document.json')
     }
   }
 
@@ -24,7 +26,9 @@ class App extends Component {
       <div className="App">
         <AppNavigation />
         <div className="row">
-          <div className="col-md-4">TOC</div>
+          <div className="col-md-4">
+            <TOC jsonData={this.state.jsonData}/>
+          </div>
           <div className="col-md-8">
             <HtmlParser />
           </div>

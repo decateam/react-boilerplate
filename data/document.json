@@ -1,0 +1,593 @@
+[
+  {
+    "type": "Element",
+    "tagName": "!doctype",
+    "attributes": {
+      "html": "html"
+    },
+    "children": []
+  },
+  {
+    "type": "Text",
+    "content": "\n"
+  },
+  {
+    "type": "Element",
+    "tagName": "html",
+    "attributes": {},
+    "children": [
+      {
+        "type": "Text",
+        "content": "\n  "
+      },
+      {
+        "type": "Element",
+        "tagName": "head",
+        "attributes": {},
+        "children": [
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "meta",
+            "attributes": {
+              "content": "text/html; charset=UTF-8",
+              "httpEquiv": "content-type"
+            },
+            "children": []
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "title",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Example 01"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n  "
+          }
+        ]
+      },
+      {
+        "type": "Text",
+        "content": "\n  "
+      },
+      {
+        "type": "Element",
+        "tagName": "body",
+        "attributes": {},
+        "children": [
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h1",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Lecture cursive"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h2",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Lire l'œuvre II.2"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h3",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "1er rendez-vous de lecture "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Lisez le roman jusqu'à ce que Gocéné et Minoé soient séparés. "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "ol",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Pourquoi Gocéné et les autres Kanak sont-ils envoyés à Paris ? Comment\n        les convainc-t-on d'y aller ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Comment les Kanak sont-ils traités à Paris ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Selon vous, à quelle époque se déroule la nouvelle ? Ce quan impose\n        aux Kanak vous semble-t-il correspondre à cette époque ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n    "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h3",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "2e rendez-vous "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Continuez votre lecture, jusqu'à ce que Gocéné et Badimoin aient appris\n      de la part du gardien- chef Où se trouve Minoé. "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "ol",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Quels aspects de Paris étonnent Gocéné et Badimoin ? Pourquoi ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Quelles valeurs représentent les deux hommes ? À quelles valeurs\n        s'opposent-ils ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Qui aide les deux hommes ? Pour quelles raisons ?"
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n    "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h3",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "3e rendez-vous "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Continuez votre lecture jusqu'à la fin. "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "ol",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Quel événement conclut le parcours de Gocéné et Badimoin ?\n        Qu'avez-vous éprouvé en le lisant ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Quelle vision Gocéné a-t-il des hommes blancs à la fin de la nouvelle\n        ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Pourquoi peut-on parler d'une œuvre engagée ?"
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n    "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h2",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "A Affiche pour l'exposition coloniale à Marseille en 1906."
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h2",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "PROJET 1 III.3"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h3",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Raconter la vie de Minoé"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Imaginez que Minoé raconte ses aventures des années plus tard, à la\n      manière de Gocéné. Elle expliquera ce qui lui est arrivé entre son dé-\n      part de Nouvelle-Calédonie et son retour. "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Pour cela, relisez en diagonale le roman de Didier Daeninckx pour repérer\n      les passages faisant allu- sion à Minoé. Puis, au brouillon, retracez sous\n      forme de schéma les étapes de ce qui lui est arrivé. Vous pourrez ensuite\n      rédiger votre travail. "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h2",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "PROJET 2 III.7"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "h3",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": " Faire un exposé sur les expositions coloniales"
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "p",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "Pour mieux comprendre le contexte de Cannibale, vous allez chercher des\n      informations sur les expositions coloniales."
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n    "
+          },
+          {
+            "type": "Element",
+            "tagName": "ol",
+            "attributes": {},
+            "children": [
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Sur Internet ou au CDI, cherchez quand et où a eu lieu la première\n        exposition coloniale au monde, puis en France. "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Que trouvait-on dans ces expositions ? Quel était leur objectif ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Cherchez une affiche promouvant une exposition coloniale, Que met-elle\n        en valeur ? Comment ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "\n        En quelle année a eu lieu la dernière exposition coloniale en France ? "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n      "
+              },
+              {
+                "type": "Element",
+                "tagName": "li",
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "Présentez le résultat de vos recherches à la classe. Vous pouvez\n        réaliser un diaporama illustré par des affiches ou des photographies\n        prises lors de ces expositions. "
+                  }
+                ]
+              },
+              {
+                "type": "Text",
+                "content": "\n    "
+              }
+            ]
+          },
+          {
+            "type": "Text",
+            "content": "\n  "
+          }
+        ]
+      },
+      {
+        "type": "Text",
+        "content": "\n"
+      }
+    ]
+  }
+]
