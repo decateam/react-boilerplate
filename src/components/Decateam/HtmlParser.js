@@ -34,6 +34,16 @@ class HtmlParser extends React.Component {
         });
     }
 
+    // Recursive render himalaya json
+    recurse(node) {
+        for (var i = 0; i < node.length; i++) {
+            console.log(node[i]);
+            if(node[i].children !== undefined) {
+                this.recurse(node[i].children);
+            }
+        }
+    } 
+
     // Render component
     render() {
       return (
@@ -42,7 +52,7 @@ class HtmlParser extends React.Component {
                 <textarea id="source" onKeyUp={this.handleTextareaKeyUp} ref="htmlInput" placeholder="HTML a charger"></textarea>
             </div>
             <div className="output">
-                <div className="content" dangerouslySetInnerHTML={{__html: this.state.htmlifyJsonNodes}}></div>
+                { this.recurse(this.state.jsonifyHtmlDocument) }
             </div>
           </div>
         )
