@@ -20,7 +20,7 @@ class HtmlParser extends React.Component {
         // Define initial state
         this.state = {
             jsonifyHtmlDocument: this.jsonData,
-            htmlifyJsonNodes: toHTML(this.jsonData)
+            htmlifyJsonNodes: toHTML(this.jsonData),
             appCls: ""
         };
         
@@ -70,15 +70,6 @@ class HtmlParser extends React.Component {
                     <div className="output">
                         <div className="content" dangerouslySetInnerHTML={{__html: this.state.htmlifyJsonNodes}}></div>
                     </div>
-                </div>
-            </div>
-            <ReaderVoice jsonData={this.state.jsonifyHtmlDocument} />
-            <div className="col-md-8">
-                <div className="input">
-                    <textarea id="source" onKeyUp={this.handleTextareaKeyUp} ref="htmlInput" placeholder="HTML a charger"></textarea>
-                </div>
-                <div className="output">
-                    <div className="container" dangerouslySetInnerHTML={{__html: this.state.htmlifyJsonNodes}}></div>
                 </div>
             </div>
         </div>
