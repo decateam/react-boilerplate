@@ -6,15 +6,35 @@ class AccessibilityControls extends React.Component {
 
     constructor(){
         super();
-        this.state = { accessible: false, colorScheme: "default"};
-        this.handleChange = this.handleChange.bind(this);
+        this.state = { accessible: false, colorScheme: "" };
+        this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
+        this.handleComboChange = this.handleComboChange.bind(this);
+        this.applyState = this.applyState.bind(this);
     }
 
-    handleChange(){
+    handleCheckboxChange(e){
         this.setState({
-          accessible: this.refs.accessible.state.checked
+          accessible: !this.state.accessible
         });
-        console.log(this.state);
+        this.applyState();
+    }
+
+    handleComboChange(e){
+        this.setState({
+          colorScheme: e.target.value
+        });
+        this.applyState();
+    }
+
+    applyState(){
+        let cls = [];
+        if(this.state.accessible === true){
+            cls.push('accessible');
+        }
+        if(this.state.colorScheme !== ""){
+            cls.push(this.state.colorScheme);
+        }
+        this.props.updateAppCls(cls.join(' '));
     }
 
     render() {
@@ -25,7 +45,7 @@ class AccessibilityControls extends React.Component {
                         Accessible Mode
                     </Col>
                     <Col sm={6}>
-                        <Checkbox onChange={this.handleChange} ref="accessible" />
+                        <Checkbox onChange={this.handleCheckboxChange} ref="accessible" />
                     </Col>
                 </FormGroup>
                 <FormGroup controlId="formHorizontalEmail">
@@ -33,7 +53,7 @@ class AccessibilityControls extends React.Component {
                         Color Scheme
                     </Col>
                     <Col sm={6}>
-                        <FormControl componentClass="select" placeholder="select">
+                        <FormControl onChange={this.handleComboChange} componentClass="select" placeholder="select" ref="colorScheme">
                             <option value="">Default</option>
                             <option value="white-on-black">White on Black text</option>
                             <option value="yellow-on-black">Yellow on Black text</option>
