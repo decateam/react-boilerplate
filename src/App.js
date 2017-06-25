@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import AppNavigation        from "./components/Decateam/AppNavigation";
-import HtmlParser           from "./components/Decateam/HtmlParser";
-import TOC                  from "./components/Decateam/TOC";
+import React, { Component }  from 'react';
+import AppNavigation         from "./components/Decateam/AppNavigation";
+import HtmlParser            from "./components/Decateam/HtmlParser";
+import TOC                   from "./components/Decateam/TOC";
+import AccessibilityControls from "./components/Decateam/AccessibilityControls";
 
 // import * as ReactBootstrap  from 'react-bootstrap';
 
@@ -26,8 +27,11 @@ class App extends Component {
       <div className="App">
         <AppNavigation />
         <div className="row">
-          <div className="col-md-4">
-            <TOC jsonData={this.state.jsonData}/>
+          <div className="col-md-4 scrollable-wrapper">
+            <div className="scrollable">
+              <TOC jsonData={this.state.jsonData}/>
+              <AccessibilityControls />
+            </div>
           </div>
           <div className="col-md-8">
             <HtmlParser />
