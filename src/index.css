@@ -3,6 +3,43 @@ body {
     padding: 0;
     padding-top: 50px;
     font-family: sans-serif;
+    font-size: 14px;
+}
+
+body.accessible {
+    font-size: 28px;
+}
+
+body.accessible span {
+    padding: 5px 10px;
+}
+
+body.accessible.white-on-black span {
+    color: white;
+    background-color: black;
+}
+
+body.accessible.yellow-on-black span {
+    color: yellow;
+    background-color: black;
+}
+
+body.accessible.white-on-blue span {
+    color: white;
+    background-color: #1f4e78;
+}
+
+body div.scrollable {
+    width: 100%;
+}
+
+body.accessible div.scrollable-wrapper {
+    overflow-x: scroll;
+}
+
+body.accessible div.scrollable {
+    width: 300%;
+
 }
 
 #toc {
@@ -12,7 +49,6 @@ body {
 }
 
 #toc .toc-item {
-    font-size: 20px;
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -31,11 +67,11 @@ body {
     -o-transform:scale(1.25) translate(30px);
 }
 
-#toc .toc-item.toc-level-1 { font-size: 175%; line-height: 40px;}
-#toc .toc-item.toc-level-2 { font-size: 150%; line-height: 35px;}
-#toc .toc-item.toc-level-3 { font-size: 125%; line-height: 30px;}
-#toc .toc-item.toc-level-4 { font-size: 100%; line-height: 25px;}
-#toc .toc-item.toc-level-5 { font-size: 90% ; line-height: 25px;}
+#toc .toc-item.toc-level-1 { font-size: 1.75em; line-height: 40px;}
+#toc .toc-item.toc-level-2 { font-size: 1.50em; line-height: 35px;}
+#toc .toc-item.toc-level-3 { font-size: 1.25em; line-height: 30px;}
+#toc .toc-item.toc-level-4 { font-size: 1.00em; line-height: 25px;}
+#toc .toc-item.toc-level-5 { font-size: 0.90em; line-height: 25px;}
 
 #toc .toc-item span {
     text-indent: 5px;
