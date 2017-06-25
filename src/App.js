@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
-import CodeFest             from "./components/CodeFest/CodeFest"
+import AppNavigation        from "./components/Decateam/AppNavigation";
+import HtmlParser           from "./components/Decateam/HtmlParser";
 
+// import * as ReactBootstrap  from 'react-bootstrap';
+
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      loading: true
-    }
+      loading: true,
+      jsonData: require('./../data/document.json')
+    };
   }
 
-  componentDidMount(){
-      this.setState({ loading: false })
+  componentDidMount() {
+      this.setState({ loading: false });
   }
 
   render() {
     return (
       <div className="App">
-        <CodeFest />
+        <AppNavigation />
+        <HtmlParser jsonData={this.state.jsonData[2].children[3]} />
       </div>
     );
   }

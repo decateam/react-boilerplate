@@ -6,12 +6,14 @@
   "dependencies": {
     "babel": "^6.23.0",
     "babel-polyfill": "^6.23.0",
+    "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "himalaya": "^0.2.10",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.5.2",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
-    "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.68.3"
+    "react-readalong-component": "^1.1.4"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
