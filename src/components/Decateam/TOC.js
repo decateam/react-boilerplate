@@ -71,7 +71,7 @@ class TOC extends React.Component {
         const tocItems = this.processItems(this.props.jsonData, []);
 
         return (
-            <div id="toc col-md-12">
+            <div className="toc col-md-12">
                 { tocItems.map((item, index) => <TOCItem itemData={ item } key={"tocitem-" + (index+1) } /> )}
             </div>
         );
