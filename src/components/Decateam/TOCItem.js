@@ -7,6 +7,8 @@ class TOCItem extends React.Component {
     }
 
     render() {
+        // Render content depending on the tag name
+        // The TOC uses bootstrap to offset element to create a hierarchy
         let content,
             cls = "col-md-"+(13 - this.props.itemData.level)+" col-md-offset-"+(this.props.itemData.level - 1);
         if(/^h\d{1}$/i.test(this.props.itemData.type)){
